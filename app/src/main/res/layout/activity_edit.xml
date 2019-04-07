@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".Edit">
 
     <ImageView
         android:id="@+id/foto"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/akun" />
+        android:layout_margin="50dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
 
     <TextView
         android:id="@+id/editteks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textStyle="bold"
         android:layout_below="@id/foto"
+        android:layout_centerInParent="true"
+        android:text="EDIT PROFILE"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
         android:textSize="20sp"
-        android:text="EDIT PROFILE"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/namaa"
@@ -31,16 +34,18 @@
         android:layout_below="@id/editteks"
         android:padding="10sp"
         android:text="Nama :"
-        android:textSize="15sp"/>
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/isinama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/namaa"
-        android:padding="10sp"
         android:hint="Nama"
-        android:textSize="15sp"/>
+        android:padding="10sp"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/email"
@@ -49,16 +54,18 @@
         android:layout_below="@id/isinama"
         android:padding="10sp"
         android:text="Email :"
-        android:textSize="15sp"/>
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/isie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
-        android:padding="10sp"
         android:hint="Email"
-        android:textSize="15sp"/>
+        android:padding="10sp"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/phone"
@@ -67,33 +74,41 @@
         android:layout_below="@id/isie"
         android:padding="10sp"
         android:text="Phone : "
-        android:textSize="15sp"/>
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/phone"
-        android:padding="10sp"
         android:hint="Phone Number"
-        android:textSize="15sp"/>
+        android:padding="10sp"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/number"
-        android:text="SAVE"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
         android:layout_toRightOf="@id/cancel"
-        android:layout_marginLeft="30dp" />
+        android:background="@color/maroon"
+        android:text="SAVE"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/number"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/maroon"
         android:text="CANCEL"
-        android:layout_marginLeft="90dp" />
+        android:textColor="@color/white" />
 
 
 </RelativeLayout>

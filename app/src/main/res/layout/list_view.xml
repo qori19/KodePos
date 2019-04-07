@@ -8,28 +8,29 @@
     android:orientation="horizontal"
     android:paddingLeft="5dp"
     android:paddingTop="5dp"
+    android:background="@color/cream"
     android:paddingBottom="5dp">
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13sp"
-        android:text="nama"
+        android:paddingTop="10dp"
+        android:text="Nama Wilayah"
         android:textColor="@android:color/black"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
         android:id="@+id/tv_overview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
         android:layout_marginTop="10dp"
-        android:text="nama"
+        android:text="Kode Pos"
         android:layout_centerVertical="true"
         android:maxLines="3"
-        android:textSize="10sp"
+        android:textSize="18sp"
         android:textColor="@android:color/black"
         android:layout_below="@id/tv1"/>
 
