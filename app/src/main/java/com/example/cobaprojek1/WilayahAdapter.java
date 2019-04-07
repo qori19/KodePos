@@ -37,7 +37,7 @@ public class WilayahAdapter extends RecyclerView.Adapter<WilayahAdapter.ViewHold
         viewHolder.tvKode.setText(wilayahModels.get(i).getKodePos());
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(context, wilayahModels.get(i).getNamaWilayah(), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, wilayahModels.get(i).getKodePos(), Toast.LENGTH_LONG).show();
             }
         });
     }
