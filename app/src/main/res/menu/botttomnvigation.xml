@@ -9,7 +9,7 @@
     <item
         android:id="@+id/menu2"
         android:icon="@drawable/ic_account"
-        android:title="Akun"
+        android:title="Account"
         android:iconTint="@color/colorPrimaryDark"/>
 
 </menu>

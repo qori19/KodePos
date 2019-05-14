@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.example.cobaprojek1.account.FragmentAccount;
+
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
     BottomNavigationView bottomNavigationView;
     Fragment fragment;
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
 
             case R.id.menu2:
-                fragment = new AkunFragment();
+                fragment = new FragmentAccount();
                 break;
         }
         return loadFragment(fragment);

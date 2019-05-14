@@ -21,5 +21,7 @@
         android:background="@color/maroon"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        app:menu="@menu/botttomnvigation"></android.support.design.widget.BottomNavigationView>
+        app:menu="@menu/botttomnvigation">
+
+    </android.support.design.widget.BottomNavigationView>
 </RelativeLayout>
