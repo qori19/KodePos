@@ -6,6 +6,14 @@
     tools:context=".SignUpActivity"
     android:background="@color/cream">
 
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
     <TextView
         android:id="@+id/editteks"
         android:layout_width="wrap_content"
@@ -14,6 +22,8 @@
         android:textStyle="bold"
         android:layout_below="@id/foto"
         android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
         android:text="SIGN UP"/>
 
     <TextView
@@ -22,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editteks"
         android:text="Nama :"
+        android:textColor="@color/black"
         android:layout_marginLeft="95dp" />
 
     <EditText
@@ -29,6 +40,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/namaasp"
+        android:textColor="@color/black"
         android:layout_centerInParent="true"
         android:hint="Nama" />
 
@@ -38,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/isinamasp"
         android:text="Email :"
+        android:textColor="@color/black"
         android:layout_marginLeft="95dp" />
 
     <EditText
@@ -45,6 +58,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/emailsp"
+        android:textColor="@color/black"
         android:layout_centerInParent="true"
         android:hint="Email" />
     <TextView
@@ -52,6 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/isiesp"
+        android:textColor="@color/black"
         android:text="Password :"
         android:layout_marginLeft="95dp" />
 
@@ -61,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/passsp"
         android:layout_centerInParent="true"
+        android:textColor="@color/black"
         android:hint="Password"
         android:inputType="textPassword"/>
 
@@ -70,6 +86,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/isipsp"
         android:text="SAVE"
+        android:layout_marginTop="50dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:layout_toRightOf="@id/cancelsp"
         android:layout_marginLeft="30dp" />
 
@@ -79,6 +98,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/isipsp"
         android:text="CANCEL"
+        android:layout_marginTop="50dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:layout_marginLeft="90dp" />
 
 </RelativeLayout>

@@ -6,7 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,8 +53,8 @@ public class WilayahAdapter extends RecyclerView.Adapter<WilayahAdapter.ViewHold
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNama = itemView.findViewById(R.id.tv1);
-            tvKode= itemView.findViewById(R.id.tv_overview);
+            tvNama = itemView.findViewById(R.id.kabu);
+            tvKode = itemView.findViewById(R.id.kode_pos);
         }
     }
 }

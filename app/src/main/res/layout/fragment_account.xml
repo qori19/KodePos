@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cream"
-    >
+    android:background="@color/cream">
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Login Success"
+        android:layout_margin="35dp"
         android:textColor="@android:color/black"
-        android:textSize="50dp" />
+        android:text="Profile Account"
+        android:textSize="30dp" />
 
     <ImageView
         android:id="@+id/foto"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+
+        android:layout_below="@id/textview"
         android:src="@drawable/ic_person_black_24dp" />
 
     <TextView
@@ -31,6 +31,8 @@
         android:layout_below="@id/foto"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:hint="Account Name"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"/>
 
     <TextView
@@ -38,6 +40,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/nama"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
         android:layout_centerInParent="true"
         android:text="Email :" />
 
@@ -46,6 +50,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
+        android:textColor="@color/black"
         android:layout_centerInParent="true"
         android:hint="Email" />
 
@@ -56,17 +61,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/isie"
         android:text="EDIT PROFILE"
-        android:background="#5E6464"
+        android:layout_marginTop="50dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:layout_marginLeft="90dp" />
 
     <Button
-        android:id="@+id/btn_login1"
+        android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/isie"
         android:layout_toRightOf="@id/edit"
+        android:layout_marginTop="50dp"
         android:text="LOGOUT"
-        android:background="#5E6464"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:onClick="logoutUser"
         android:layout_marginLeft="15dp" />
 

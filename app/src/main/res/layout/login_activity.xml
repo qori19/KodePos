@@ -10,8 +10,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="70dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
 
 
         <EditText
@@ -20,9 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:hint="Email"
-
             />
 
         <EditText
@@ -31,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPassword"
             android:hint="Password" />
 
@@ -40,16 +49,21 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Login"
-            android:background="#5E6464"
+            android:layout_margin="20dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
             android:onClick="loginUser"/>
+
         <Button
             android:id="@+id/btn_sign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:background="@color/maroon"
             android:text="Sign Up"
-            android:background="#5E6464"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
+    </LinearLayout>
 </LinearLayout>

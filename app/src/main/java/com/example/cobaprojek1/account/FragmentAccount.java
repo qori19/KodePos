@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cobaprojek1.Edit;
+import com.example.cobaprojek1.LoginActivity;
 import com.example.cobaprojek1.R;
 import com.example.cobaprojek1.connection.Addpreferenceconfig;
 import com.example.cobaprojek1.model.get_user.LoginResponse;
@@ -52,6 +53,7 @@ public class FragmentAccount extends Fragment implements GetUserView, UpdateView
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         btnEdit = view.findViewById(R.id.edit);
+        btn_logout = view.findViewById(R.id.btn_logout);
         isi = view.findViewById(R.id.isie);
         userrr = view.findViewById(R.id.nama);
 
@@ -64,6 +66,14 @@ public class FragmentAccount extends Fragment implements GetUserView, UpdateView
             public void onClick(View v) {
                 Intent ganti = new Intent(getActivity().getApplicationContext(), Edit.class);
                 startActivity(ganti);
+            }
+        });
+
+        btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sharedPreferences.logout(sharedPreferences.getToken());
+                startActivity(new Intent(getContext(), LoginActivity.class));
             }
         });
     }

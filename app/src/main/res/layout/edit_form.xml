@@ -5,12 +5,23 @@
     android:layout_height="match_parent"
     android:background="@color/cream">
 
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
+
     <TextView
         android:id="@+id/editteks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:textColor="@color/black"
         android:layout_below="@id/foto"
         android:textSize="30sp"
         android:text="EDIT PROFILE"/>
@@ -19,6 +30,7 @@
         android:id="@+id/namaa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_below="@id/editteks"
         android:text="Nama :"
         android:layout_marginLeft="95dp" />
@@ -28,6 +40,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/namaa"
+        android:textColor="@color/black"
         android:layout_centerInParent="true"
         android:hint="Nama" />
 
@@ -38,7 +51,9 @@
         android:layout_below="@id/isinama"
         android:text="SAVE"
         android:layout_toRightOf="@id/cancel"
-        android:layout_marginLeft="30dp"
+        android:layout_margin="30dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:onClick="updateUser"/>
 
     <Button
@@ -47,6 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/isinama"
         android:text="CANCEL"
+        android:layout_marginTop="30dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         android:layout_marginLeft="90dp" />
 
 </RelativeLayout>

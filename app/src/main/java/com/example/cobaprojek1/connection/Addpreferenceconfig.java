@@ -35,4 +35,11 @@ public class Addpreferenceconfig {
         status = sharedPreferences.getBoolean(context.getResources().getString(R.string.login_status_preference), false);
         return status;
     }
+
+    public void logout(String token) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("Token", token);
+        editor.clear();
+        editor.commit();
+    }
 }

@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.view.MenuItem;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.cobaprojek1.account.FragmentAccount;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomNavigationView = findViewById(R.id.bnv);
-        loadFragment (new WilayahFragment());
+        loadFragment(new ProvinsiFragment());
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.menu1:
-                fragment = new WilayahFragment();
+                fragment = new ProvinsiFragment();
                 break;
 
             case R.id.menu2:

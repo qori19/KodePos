@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void onSucces(PostLoginResponse login) {
+        preferenceconfig.writeLoginStatus(true);
         preferenceconfig.token(login.getToken());
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
