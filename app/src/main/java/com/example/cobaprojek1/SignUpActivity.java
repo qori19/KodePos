@@ -11,6 +11,13 @@ import android.widget.Toast;
 import com.example.cobaprojek1.presenter.RegisPresenter;
 import com.example.cobaprojek1.presenter.RegisView;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
+
 public class SignUpActivity extends AppCompatActivity implements RegisView {
     EditText nama, email, passw;
     Button kembali, simpan;

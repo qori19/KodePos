@@ -8,7 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.cobaprojek1.account.FragmentAccount;
+import com.example.cobaprojek1.Fragment.FragmentAccount;
+import com.example.cobaprojek1.Fragment.ProvinsiFragment;
+
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
     BottomNavigationView bottomNavigationView;

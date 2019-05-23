@@ -14,6 +14,12 @@ import retrofit2.http.Header;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
 public interface ApiLogin {
     @FormUrlEncoded
     @POST("/users/login")

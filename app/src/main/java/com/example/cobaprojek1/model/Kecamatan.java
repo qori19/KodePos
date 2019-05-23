@@ -1,6 +1,12 @@
 package com.example.cobaprojek1.model;
 
-public class KotaKab {
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
+public class Kecamatan {
     private String kecamatan;
 
     private String kodepos;

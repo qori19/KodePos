@@ -1,5 +1,11 @@
 package com.example.cobaprojek1.model.postlogin;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
 public class PostLoginResponse{
 	private boolean auth;
 	private String token;

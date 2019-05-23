@@ -1,5 +1,4 @@
-package com.example.cobaprojek1.account;
-
+package com.example.cobaprojek1.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,10 +23,12 @@ import com.example.cobaprojek1.presenter.GetUserPresenter;
 import com.example.cobaprojek1.presenter.GetUserView;
 import com.example.cobaprojek1.presenter.UpdateView;
 
-
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
  */
+
 public class FragmentAccount extends Fragment implements GetUserView, UpdateView {
     View v;
     private Button btn_logout, btnEdit;

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cream"
-    tools:context=".KecamatanFragment">
+    tools:context=".Fragment.KecamatanFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -24,7 +24,7 @@
                 android:fontFamily="sans-serif"
                 android:paddingHorizontal="15sp"
                 android:paddingVertical="10dp"
-                android:text="Kecamatan"
+                android:text="Kecamatan , Kelurahan , Kode Pos"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />

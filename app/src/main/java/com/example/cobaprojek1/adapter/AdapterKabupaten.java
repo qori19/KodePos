@@ -13,33 +13,38 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.cobaprojek1.KecamatanFragment;
+import com.example.cobaprojek1.Fragment.KecamatanFragment;
 import com.example.cobaprojek1.R;
 import com.example.cobaprojek1.model.DataPos;
 
 import java.util.List;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
 
-public class AdapterKab extends RecyclerView.Adapter<AdapterKab.Holder> {
+public class AdapterKabupaten extends RecyclerView.Adapter<AdapterKabupaten.Holder> {
     Context context;
     List<DataPos> dataPos;
     SharedPreferences pref;
 
-    public AdapterKab(Context context, List<DataPos> dataPos) {
+    public AdapterKabupaten(Context context, List<DataPos> dataPos) {
         this.context = context;
         this.dataPos = dataPos;
     }
 
     @NonNull
     @Override
-    public AdapterKab.Holder onCreateViewHolder(@NonNull ViewGroup parent, final int viewType) {
+    public AdapterKabupaten.Holder onCreateViewHolder(@NonNull ViewGroup parent, final int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_view2, parent, false);
-        return new AdapterKab.Holder(view);
+        return new AdapterKabupaten.Holder(view);
     }
 
     @Override
-    public void onBindViewHolder(AdapterKab.Holder holder, final int position) {
+    public void onBindViewHolder(AdapterKabupaten.Holder holder, final int position) {
         holder.bind(position);
     }
 
@@ -55,7 +60,7 @@ public class AdapterKab extends RecyclerView.Adapter<AdapterKab.Holder> {
         public Holder(View itemView) {
             super(itemView);
             nama = itemView.findViewById(R.id.kabupaten);
-            kabupaten = itemView.findViewById(R.id.province);
+            kabupaten = itemView.findViewById(R.id.list_view_Kabupaten);
         }
 
         public void bind(final int position) {

@@ -13,6 +13,12 @@ import com.example.cobaprojek1.model.postlogin.PostLoginResponse;
 import com.example.cobaprojek1.presenter.LoginPresenter;
 import com.example.cobaprojek1.presenter.LoginView;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
 public class LoginActivity extends AppCompatActivity implements LoginView {
     private Addpreferenceconfig preferenceconfig;
     private EditText Username, UserPassword;

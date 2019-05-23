@@ -9,61 +9,67 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.cobaprojek1.R;
-import com.example.cobaprojek1.model.KotaKab;
+import com.example.cobaprojek1.model.Kecamatan;
 
 import java.util.List;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
 
-public class AdapterKokab extends RecyclerView.Adapter<AdapterKokab.Holder> {
+public class AdapterKecamatan extends RecyclerView.Adapter<AdapterKecamatan.Holder> {
     Context context;
-    List<KotaKab> kotaKabs;
+    List<Kecamatan> kecamatans;
     SharedPreferences pref;
 
-    public AdapterKokab(Context context, List<KotaKab> kotaKabs) {
+    public AdapterKecamatan(Context context, List<Kecamatan> kecamatans) {
         this.context = context;
-        this.kotaKabs = kotaKabs;
+        this.kecamatans = kecamatans;
     }
 
     @NonNull
     @Override
-    public AdapterKokab.Holder onCreateViewHolder(@NonNull ViewGroup parent, final int viewType) {
+    public AdapterKecamatan.Holder onCreateViewHolder(@NonNull ViewGroup parent, final int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_view, parent, false);
-        return new AdapterKokab.Holder(view);
+        return new AdapterKecamatan.Holder(view);
     }
 
     @Override
-    public void onBindViewHolder(AdapterKokab.Holder holder, final int position) {
+    public void onBindViewHolder(AdapterKecamatan.Holder holder, final int position) {
         holder.bind(position);
     }
 
     @Override
     public int getItemCount() {
-        return kotaKabs.size();
+        return kecamatans.size();
     }
 
     class Holder extends RecyclerView.ViewHolder {
         private TextView kec, kel, kode;
-        private RelativeLayout kokab;
+        private RelativeLayout list_kec;
 
         public Holder(View itemView) {
             super(itemView);
             kec = itemView.findViewById(R.id.kecamatan);
             kel = itemView.findViewById(R.id.kelurahan);
             kode = itemView.findViewById(R.id.kode_pos);
-            kokab = itemView.findViewById(R.id.kabu);
+            list_kec = itemView.findViewById(R.id.list_view_Kecamatan);
         }
 
         public void bind(final int position) {
-            kec.setText(kotaKabs.get(position).getKecamatan());
-            kel.setText(kotaKabs.get(position).getKelurahan());
-            kode.setText(kotaKabs.get(position).getKodepos());
-            kokab.setOnClickListener(new View.OnClickListener() {
+            kec.setText(kecamatans.get(position).getKecamatan());
+            kel.setText(kecamatans.get(position).getKelurahan());
+            kode.setText(kecamatans.get(position).getKodepos());
+            list_kec.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Toast.makeText(context, kecamatans.get(position).getKodepos(),Toast.LENGTH_LONG).show();
                 }
             });
         }

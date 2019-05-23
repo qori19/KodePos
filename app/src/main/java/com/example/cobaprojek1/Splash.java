@@ -5,6 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
 public class Splash extends Activity {
 
     // Splash screen timer
@@ -19,7 +25,7 @@ public class Splash extends Activity {
 
             @Override
             public void run() {
-                Intent i = new Intent(Splash.this, MainActivity.class);
+                Intent i = new Intent(Splash.this, LoginActivity.class);
                 startActivity(i);
                 finish();
             }

@@ -17,6 +17,12 @@ import com.example.cobaprojek1.presenter.GetUserView;
 import com.example.cobaprojek1.presenter.UpdatePresenter;
 import com.example.cobaprojek1.presenter.UpdateView;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
 public class Edit extends AppCompatActivity implements UpdateView, GetUserView {
     EditText nama, telpon;
     Button kembali, simpan;

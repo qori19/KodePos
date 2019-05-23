@@ -13,12 +13,17 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.cobaprojek1.Kabupaten;
+import com.example.cobaprojek1.Fragment.Kabupaten;
 import com.example.cobaprojek1.R;
 import com.example.cobaprojek1.model.DataPos;
 
 import java.util.List;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
 
 public class AdapterProvinsi extends RecyclerView.Adapter<AdapterProvinsi.Holder> {
     Context context;
@@ -55,7 +60,7 @@ public class AdapterProvinsi extends RecyclerView.Adapter<AdapterProvinsi.Holder
         public Holder(View itemView) {
             super(itemView);
             nama = itemView.findViewById(R.id.kabupaten);
-            provinsi = itemView.findViewById(R.id.province);
+            provinsi = itemView.findViewById(R.id.list_view_Kabupaten);
         }
 
         public void bind(final int position) {

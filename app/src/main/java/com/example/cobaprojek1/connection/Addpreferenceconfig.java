@@ -6,6 +6,12 @@ import android.content.SharedPreferences;
 import com.example.cobaprojek1.R;
 import com.example.cobaprojek1.model.get_user.LoginResponse;
 
+/**
+ * Created by Qori Fatkhul Kurniyadi on 15/05/2019
+ * Nim : 124170036
+ * github : github.com/qori19
+ */
+
 public class Addpreferenceconfig {
     private LoginResponse loginResponse;
     private SharedPreferences sharedPreferences;

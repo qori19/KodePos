@@ -31,7 +31,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
-        android:text="Develop by Nanda Rizky Widyanto"
+        android:text="Develop by Qori Fatkhul Kurniyadi"
         android:textColor="#ffffff"
         android:textSize="12sp"
         android:textStyle="bold" />

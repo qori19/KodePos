@@ -2,7 +2,7 @@ package com.example.cobaprojek1.presenter;
 
 import com.example.cobaprojek1.connection.BaseApp;
 import com.example.cobaprojek1.model.DataPos;
-import com.example.cobaprojek1.model.KotaKab;
+import com.example.cobaprojek1.model.Kecamatan;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -83,15 +83,15 @@ public class MainPresenter implements MainInterface {
     }
 
     public void loadkokab(String urlKokab) {
-        BaseApp.apiService1.getKotaKab(urlKokab).enqueue(new Callback<List<KotaKab>>() {
+        BaseApp.apiService1.getKotaKab(urlKokab).enqueue(new Callback<List<Kecamatan>>() {
 
             @Override
-            public void onResponse(Call<List<KotaKab>> call, Response<List<KotaKab>> response) {
+            public void onResponse(Call<List<Kecamatan>> call, Response<List<Kecamatan>> response) {
                 mainView.getKokabSuccess(response.body());
             }
 
             @Override
-            public void onFailure(Call<List<KotaKab>> call, Throwable t) {
+            public void onFailure(Call<List<Kecamatan>> call, Throwable t) {
                 mainView.onError(t.getMessage());
             }
         });
